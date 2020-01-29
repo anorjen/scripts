@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#######################
-# script for i3blocks #
-# show CPU temp       #
-#######################
+##----------------------------------------------##
+##	replacement for i3blocks/temperature		##
+##	show only CPU temp                          ##
+##----------------------------------------------##
 
 T_WARN=60;
 C_WARN="#FFFC00"

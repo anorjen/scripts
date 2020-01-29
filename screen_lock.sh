@@ -1,9 +1,14 @@
 #!/bin/sh -e
 
+##----------------------------------------------##
+##	lock with i3lock                            ##
+##  Pixellate or Blur                           ##
+##----------------------------------------------##
+
 # Take a screenshot
 scrot -o /tmp/screen_locked.png
 
-# Pixellate it 10x
+## Pixellate it 10x
 # mogrify -scale 10% -scale 1000% /tmp/screen_locked.png
 
 # Blur

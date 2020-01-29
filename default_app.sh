@@ -1,5 +1,10 @@
 #!/bin/bash
 
+##----------------------------------------------##
+## set and show default add				        ##
+## for help run without args                    ##
+##----------------------------------------------##
+
 function f_getAppList {
 	
 	apps=$(ls /usr/share/applications/*.desktop)

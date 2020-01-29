@@ -1,5 +1,9 @@
 #!/bin/bash
 
+##----------------------------------------------##
+## replacement for i3-dmenu-run                 ##
+##----------------------------------------------##
+
 apps=$(ls /usr/share/applications/*.desktop)
 user_apps=$(ls $HOME/.local/share/applications/*.desktop)
 snap_apps=$(ls /var/lib/snapd/desktop/applications/*.desktop)

@@ -1,10 +1,9 @@
 #!/bin/bash
 
-#########################
-# script for i3blocks   #
-# show avaliable memory #
-# depends: bc           #
-#########################
+##----------------------------------------------##
+##	replacement for i3blocks/memory    			##
+##	show avaliable memory with colours          ##
+##----------------------------------------------##
 
 M_WARN=1.2;
 C_WARN="#FFFC00"

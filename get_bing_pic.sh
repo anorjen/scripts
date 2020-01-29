@@ -1,5 +1,10 @@
 #!/bin/bash
 
+##----------------------------------------------##
+##	download and set as wallpaper				##
+##	picture from bing.com                       ##
+##----------------------------------------------##
+
 sleep 2
 
 SITE="https://www.bing.com/"

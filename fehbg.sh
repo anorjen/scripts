@@ -1,3 +1,9 @@
 #!/bin/sh -e
 
-feh --randomize --bg-fill ~/Pictures/backgrounds/*
+##----------------------------------------------##
+## set random wallpaper from PATH               ##
+##----------------------------------------------##
+
+PATH="~/Pictures/backgrounds/"
+
+feh --randomize --bg-fill ${PATH}*

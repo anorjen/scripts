@@ -1,8 +1,13 @@
 #!/bin/bash
 
-#notify-send -t 2000 "Ищу перевод..." " "
+##----------------------------------------------##
+##	translate to LANG selected text        		##
+##----------------------------------------------##
+
+LANG=ru
+
 TEXT=$(xclip -selection primary -o)
-TRANS=$(trans -b :ru "$TEXT")
+TRANS=$(trans -b :"$LANG" "$TEXT")
 b=${TRANS//null/}
 #echo $b
 if [ "$b" ]; then

@@ -1,5 +1,10 @@
 #!/bin/bash
 
+##----------------------------------------------##
+## make snapshots for subvolumes @ @home        ##
+## DISK - btrfs device                          ##
+##----------------------------------------------##
+ 
 DISK="/dev/nvme0n1p4"
 
 mkdir -p /mnt/btrfs
