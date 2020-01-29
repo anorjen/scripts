@@ -1,42 +1,43 @@
 # scripts
 
-btrfs_snapshot.sh
-	-- make snapshots for subvolumes @ @home
-	-- DISK - btrfs device
-
-default_app.sh
-	-- set and show default add
-	-- for help run without args 
-
-dmenu_drun.sh
-	-- replacement for i3-dmenu-run
-
-fehbg.sh
-	-- set random wallpaper
-
-get_bing_pic.sh
-	-- download and set as wallpaper
-	-- picture from bing.com
-
-i3cputemp.sh
-	-- replacement for i3blocks/temperature
-	-- show only CPU temp
-
-i3memory.sh
-	-- replacement for i3blocks/memory
-	-- show avaliable memory with colours
-
-lockscreen.sh
-	-- lock with i3lock and off screen
-
-screen_lock.sh
-	-- lock with i3lock
-
-screen_off.sh
-	-- set off screen if screen locked
-
-seltr.sh
-	-- translate selected text
-
-tempreture.sh
-	-- show CPU temp with colours
+btrfs_snapshot.sh<br>
+	-- make snapshots for subvolumes @ @home<br>
+	-- DISK - btrfs device<br>
+<br>
+default_app.sh<br>
+	-- set and show default add<br>
+	-- for help run without args<br>
+<br>
+dmenu_drun.sh<br>
+	-- replacement for i3-dmenu-run<br>
+<br>
+fehbg.sh<br>
+	-- set random wallpaper<br>
+<br>
+get_bing_pic.sh<br>
+	-- download and set as wallpaper<br>
+	-- picture from bing.com<br>
+<br>
+i3cputemp.sh<br>
+	-- replacement for i3blocks/temperature<br>
+	-- show only CPU temp<br>
+<br>
+i3memory.sh<br>
+	-- replacement for i3blocks/memory<br>
+	-- show avaliable memory with colours<br>
+<br>
+lockscreen.sh<br>
+	-- lock with i3lock and off screen<br>
+<br>
+screen_lock.sh<br>
+	-- lock with i3lock<br>
+<br>
+screen_off.sh<br>
+	-- set off screen if screen locked<br>
+<br>
+seltr.sh<br>
+	-- translate selected text<br>
+<br>
+tempreture.sh<br>
+	-- show CPU temp with colours<br>
+<br>
