@@ -5,7 +5,7 @@ btrfs_snapshot.sh<br>
 	-- DISK - btrfs device<br>
 <br>
 default_app.sh<br>
-	-- set and show default add<br>
+	-- set and show default app<br>
 	-- for help run without args<br>
 <br>
 dmenu_drun.sh<br>
