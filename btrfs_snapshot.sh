@@ -1,10 +1,9 @@
 #!/bin/bash
 
-##----------------------------------------------##
-## make snapshots for subvolumes @ @home        ##
-## DISK - btrfs device                          ##
-##----------------------------------------------##
- 
+#______________________________________________________________________________
+#----- make snapshots for subvolumes @ @home ----------------------------------
+#----- DISK - btrfs device ----------------------------------------------------
+
 DISK="/dev/nvme0n1p4"
 
 mkdir -p /mnt/btrfs
@@ -15,11 +14,10 @@ then
 
 	for SUB in @ @home
 	do
-		btrfs subvolume snapshot /mnt/btrfs/${SUB} /mnt/btrfs/snapshots/${SUB}_$(date +"%y-%m-%d")
+		btrfs subvolume snapshot /mnt/btrfs/${SUB} /mnt/btrfs/snapshots/${SUB}_$(date +"%y-%m-%d_%H-%M")
 	done
 	echo "Snapshot created"
 	umount /mnt/btrfs
 else
 	echo "FAIL"
 fi
-

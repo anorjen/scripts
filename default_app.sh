@@ -113,7 +113,7 @@ then
 elif [[ $# -eq 1 && $1 == "-a" ]]
 then
 	f_printList $( f_getAppList)
-elif [[ $# -eq 1 && $1 == "-o" ]]
+elif [[ $# -eq 2 && $1 == "-o" ]]
 then
 	xdg-open $2
 else
