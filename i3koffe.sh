@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# deprecated
+# replacement by autolock.sh and autolock_toggle.sh
 ############################
 # script for i3blocks      #
 # show screenlocker status #
