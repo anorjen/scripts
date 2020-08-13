@@ -3,11 +3,11 @@
 #_______________________________________________________________________________
 #----------------- script for i3blocks screenlocker toggle ---------------------
 
+ID=`cat ~/.xautolock_status`
+ST=""
+
 if [[ $BLOCK_BUTTON -eq 3 ]]
 then
-	ID=`cat ~/.xautolock_status`
-	ST=""
-
 	if [[ $ID -eq 0 ]]
 	then
 		xset s on

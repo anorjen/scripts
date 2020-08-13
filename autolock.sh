@@ -9,4 +9,4 @@ xautolock -detectsleep \
 		  -locker "dm-tool lock && systemctl suspend" \
 		  -notify 60 -notifier "notify-send -u critical -t 30000 -- 'SUSPEND in 1 minute'" &
 
-echo 0 > ~/.xautolock_status
+echo 1 > ~/.xautolock_status
