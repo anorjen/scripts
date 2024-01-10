@@ -28,14 +28,14 @@ else
 	WALLPAPER=$WALLPAPER_FHD
 fi
 
-function isImage {
+function f_isImage {
 	possibleImage=$1
 	
 	status=`file $possibleImage |grep -c "image"`
 	echo $status
 }
 
-function downloadWallpapers {
+function f_downloadWallpapers {
 	pic=`curl -A "Mozilla/5.0 (Linux; Android 10; SM-G996U Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.36" $SITE | grep -o -e '"Wallpaper":"\(\/[a-zA-Z0-9.?=_]\+1920x1200.jpg\)' | cut -c 14-`
 	pic_fhd=`echo $pic | sed 's/1920x1200/1920x1080/'`
 	pic_uhd=`echo $pic | sed 's/1920x1200/UHD/'`
@@ -45,13 +45,13 @@ function downloadWallpapers {
 	url_uhd="$SITE$pic_uhd"
 	echo $url_uhd
 
-	status_fhd=$( downloadWallpaper $WALLPAPER_FHD $url)
+	status_fhd=$( f_downloadWallpaper $WALLPAPER_FHD $url)
 	echo "FHD wallpaper download: " $status_fhd
-	status_uhd=$( downloadWallpaper $WALLPAPER_UHD $url_uhd)
+	status_uhd=$( f_downloadWallpaper $WALLPAPER_UHD $url_uhd)
 	echo "UHD wallpaper download: " $status_uhd
 }
 
-function downloadWallpaper {
+function f_downloadWallpaper {
 	wallpaper=$1
 	url=$2
 
@@ -63,8 +63,8 @@ function downloadWallpaper {
 		return
 	fi
 	
-	isWallpaper=$( isImage $wallpaper)
-	if [[ isWallpaper -eq 1 ]]
+	isImage=$( f_isImage $wallpaper)
+	if [[ isImage -eq 1 ]]
 	then
 		echo "OK"
 	else
@@ -73,7 +73,7 @@ function downloadWallpaper {
 	fi
 }
 
-function setWallpaper {
+function f_setWallpaper {
 	if [[ -s $WALLPAPER ]]
 	then
 		cp $WALLPAPER $WALLS_DIR/login-background.jpg
@@ -86,7 +86,7 @@ function setWallpaper {
 
 if [[ ! -s $WALLPAPER ]]
 then
-	downloadWallpapers
+	f_downloadWallpapers
 fi
 
-setWallpaper
+f_setWallpaper
